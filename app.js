@@ -1,6 +1,9 @@
+
 var express = require('express');
 
-var nick;
-nick = "nice man";
+var myString;
+myString = "nice man";
 ///
-console.log(nick);
+console.log(myString);
+
+

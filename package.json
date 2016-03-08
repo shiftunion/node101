@@ -11,5 +11,8 @@
     "url": "node101"
   },
   "author": "ShiftUnion",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
