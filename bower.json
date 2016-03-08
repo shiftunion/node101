@@ -1,0 +1,22 @@
+{
+  "name": "library",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "ShiftUnion"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/shiftunion/node101",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
