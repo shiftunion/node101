@@ -11,7 +11,6 @@
 
     app.get('/', function (req, res) {
         res.render('index', {
-            title: 'hello from nick on his bike',
             list: ['a', 'b']
         });
     });
