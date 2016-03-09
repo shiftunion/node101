@@ -11,7 +11,14 @@
 
     app.get('/', function (req, res) {
         res.render('index', {
-            list: ['a', 'b']
+            nav: [{
+                Link: '/Books',
+                Text: 'Books'
+            },
+                {
+                    Link: '/Authors',
+                    Text: 'Authors'
+                }]
         });
     });
 
