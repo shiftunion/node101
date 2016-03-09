@@ -6,11 +6,9 @@ app.use(express.static('public'));
 app.use(express.static('src/views'));
 
 
-app.get("/", function(req,res){
+app.get("/", function (req, res) {
     res.send("Hello books");
-})
-
-
+});
 
 
 var port = 5000;
