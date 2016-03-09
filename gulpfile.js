@@ -5,6 +5,7 @@ var jscs = require('gulp-jscs');
 var jsFiles = ['*.js', 'src/**/*.js'];
 
 gulp.task('style', function () {
+    "use strict";
     return gulp.src(jsFiles)
         .pipe(jshint())
         .pipe(jshint.reporter(
@@ -18,7 +19,7 @@ gulp.task('style', function () {
 });
 
 gulp.task('inject', function () {
-
+    "use strict";
     var inject = require('gulp-inject');
 
     var injectSrc = gulp.src(['./public/css/*.css',
@@ -26,8 +27,7 @@ gulp.task('inject', function () {
 
     var injectOptions = {
         ignorePath: '/public'
-    }
-
+    };
 
     var wiredep = require('wiredep').stream;
 
@@ -35,8 +35,7 @@ gulp.task('inject', function () {
         bowerJson: require('./bower.json'),
         directory: './public/lib',
         ignorePath: '../../public'
-    }
-
+    };
 
     return gulp.src('./src/views/*.html')
         .pipe(wiredep(wiredepOptions))
