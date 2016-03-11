@@ -37,10 +37,9 @@
     app.use(bodyParser.urlencoded());
     app.use(cookieParser());
     app.use(session({'secret':'library'}));
-    app.use(passport.initialize());
-    app.use(passport.session());
 
 
+    require('./src/config/passport')(app);
 
     app.use('/Books', bookRouter);
     app.use('/Admin', adminRouter);
